@@ -1,0 +1,71 @@
+.navbar {
+  color: white;
+  font-size: 14px;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &.scrolled{
+    background: var(--main-color);
+
+  }
+  .container {
+    padding: 0px 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 25px;
+        margin-right: 40px;
+      }
+      span {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 20px;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .icon {
+        cursor: pointer;
+      }
+      .profile {
+        .option {
+          display: none;
+          background-color: var(--main-color);
+          border-radius: 5px;
+          span {
+            cursor: pointer;
+            padding: 10px;
+          }
+        }
+        &:hover {
+          .option {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            &:hover{ .logout {
+              color:red;
+            }}
+          }
+        }
+      }
+    }
+  }
+}
