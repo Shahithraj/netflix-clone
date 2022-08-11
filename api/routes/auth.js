@@ -53,7 +53,8 @@ router.post('/login', async (req, res) => {
           process.env.SECRET_KEY,
           { expiresIn: '5d' }
         );
-        res.status(500).json({ ...restOfData, accessToken });
+
+        res.status(200).json({ ...restOfData, accessToken });
       }
     }
   } catch (err) {

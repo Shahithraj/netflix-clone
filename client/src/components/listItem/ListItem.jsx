@@ -58,12 +58,12 @@ const ListItem = ({ index, item }) => {
             <div className="itemInfoTop">
               <span>{movie?.duration}</span>
               <span className="age_limit">{movie?.limit ?? +18}</span>
-              <span>{movie.year}</span>
+              <span>{movie?.year}</span>
             </div>
             <div className="desc">
-             {movie.desc}
+             {movie?.desc}
             </div>
-            <div className="genre">{movie.genre}</div>
+            <div className="genre">{movie?.genre}</div>
           </div>
         </>
       )}

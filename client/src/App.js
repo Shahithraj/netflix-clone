@@ -12,10 +12,10 @@ function App() {
   const navigate = useNavigate()
 const {state:{user}} = useContext(AuthContext)
   useEffect(() => {
-    // if(!user){
-    //   navigate("/register")
-    // }
-  },[])
+    if(!user){
+      navigate("/register")
+    }
+  },[user])
 
   return (
     <div className="App">

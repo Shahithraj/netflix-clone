@@ -48,10 +48,10 @@ const Features = ({ type,setGenre }) => {
           </select>
         </div>
       )}
-      <img width="100%" src={content.img} alt="" />
+      <img width="100%" src={content?.img} alt="" />
       <div className="info">
-        <img src={content.imgSm} alt="" />
-        <span className="desc">{content.desc}</span>
+        <img src={content?.imgSm} alt="" />
+        <span className="desc">{content?.desc}</span>
         <div className="buttons">
           <button className="play">
             <PlayArrowIcon />
